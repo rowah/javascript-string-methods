@@ -13,3 +13,9 @@ console.log(
 );
 console.log(firstName.charCodeAt(firstName.length - 1));
 console.log(firstName.charCodeAt(8));
+
+//concat
+const secondName = "Rowa";
+const fullName = firstName.concat(" ", secondName);
+console.log(fullName.concat(1)); //James Rowa1
+console.log(fullName.concat(["Nairobi", "Kenya"])); //James RowaNairobi,Kenya
