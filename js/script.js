@@ -17,5 +17,28 @@ console.log(firstName.charCodeAt(8));
 //concat
 const secondName = "Rowa";
 const fullName = firstName.concat(" ", secondName);
-console.log(fullName.concat(1)); //James Rowa1
+console.log(fullName); //James Rowa1
 console.log(fullName.concat(["Nairobi", "Kenya"])); //James RowaNairobi,Kenya
+
+//includes
+console.log(fullName.includes("jam")); //false (case-sensitivity)
+console.log(fullName.includes("Jam")); //true
+console.log(fullName.includes("Jam", 1)); //false (position starts at 1)
+console.log(fullName.includes("R")); //TRUE
+
+//indexOf
+const sentence =
+  "My eldest brother, also called Rowa, and I share the name Rowa";
+const sharedName = "Rowa";
+const namesFirstIndex = sentence.indexOf(sharedName);
+console.log(
+  `In the sentence, the name ${sharedName.toLocaleUpperCase()} appears first at index ${namesFirstIndex} and also at index ${sentence.indexOf(
+    sharedName,
+    namesFirstIndex + 1
+  )}.`
+);
+console.log(sentence.indexOf());
+console.log(sentence.indexOf("rowa"));
+console.log(sentence.indexOf(" ")); //2
+//we add one to the index the word first appears so that the second search just assumed the already existing first name and searches going forward from index 39.
+console.log(sentence.indexOf(""));
