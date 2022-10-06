@@ -17,7 +17,7 @@ console.log(firstName.charCodeAt(8));
 //concat
 const secondName = "Rowa";
 const fullName = firstName.concat(" ", secondName);
-console.log(fullName); //James Rowa1
+console.log(fullName); //James Rowa
 console.log(fullName.concat(["Nairobi", "Kenya"])); //James RowaNairobi,Kenya
 
 //includes
@@ -48,3 +48,9 @@ const whiteSpacedStr = " I have white spaces ";
 console.log(whiteSpacedStr.length);
 const trimmedStr = whiteSpacedStr.trim();
 console.log(trimmedStr.length);
+
+//toLowerCase()
+console.log(fullName.toLowerCase()); //james rowa
+
+//toUpperCase()
+console.log(firstName.toUpperCase()); //JAMES
