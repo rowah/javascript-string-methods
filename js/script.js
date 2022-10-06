@@ -42,3 +42,9 @@ console.log(sentence.indexOf("rowa"));
 console.log(sentence.indexOf(" ")); //2
 //we add one to the index the word first appears so that the second search just assumed the already existing first name and searches going forward from index 39.
 console.log(sentence.indexOf(""));
+
+//trim()
+const whiteSpacedStr = " I have white spaces ";
+console.log(whiteSpacedStr.length);
+const trimmedStr = whiteSpacedStr.trim();
+console.log(trimmedStr.length);
