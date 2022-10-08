@@ -96,4 +96,14 @@ console.log("I am from East Africa".replace("East Africa", "Kenya")); //I am fro
 console.log(1, firstName.repeat()); //returns empty string
 console.log(2, firstName.repeat(0)); //returns empty string
 console.log(3, firstName.repeat(5)); //3 'JamesJamesJamesJamesJames'
-console.log(4, firstName.repeat(-3)); //Rangeerror
+//console.log(4, firstName.repeat(-3)); //Rangeerror
+
+//match()
+const regEx = /[A-Z]/g;
+console.log(fullName.match(regEx)); //['J', 'R']
+console.log(fullName.match("Rowa")); //['Rowa', index: 6, input: 'James Rowa', groups: undefined]
+const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+const regexp = /[A-E]/gi;
+const matches = alphabet.match(regexp);
+
+console.log(matches); // ['A', 'B', 'C', 'D', 'E', 'a', 'b', 'c', 'd', 'e']
