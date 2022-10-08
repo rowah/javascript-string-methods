@@ -91,3 +91,9 @@ const lastName = "Onyango";
 const myAka = fullName.replace(/James/i, lastName);
 console.log(myAka); //Onyango Rowa
 console.log("I am from East Africa".replace("East Africa", "Kenya")); //I am from Kenya
+
+//repeat()
+console.log(1, firstName.repeat()); //returns empty string
+console.log(2, firstName.repeat(0)); //returns empty string
+console.log(3, firstName.repeat(5)); //3 'JamesJamesJamesJamesJames'
+console.log(4, firstName.repeat(-3)); //Rangeerror
