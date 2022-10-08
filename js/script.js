@@ -85,3 +85,9 @@ console.log(fullName.search(/[^\w]/g)); //5 the only whitespace in the fullName 
 console.log(fullName.search(/[A-Z]/g)); //0 J at index 0 is the first capital letter
 console.log(fullName.search(/[[.]]/g)); //-1 the fullName has no fullstop
 console.log(fullName.search(/AmEs/i)); //1
+
+//replace()
+const lastName = "Onyango";
+const myAka = fullName.replace(/James/i, lastName);
+console.log(myAka); //Onyango Rowa
+console.log("I am from East Africa".replace("East Africa", "Kenya")); //I am from Kenya
