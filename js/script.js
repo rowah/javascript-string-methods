@@ -59,3 +59,14 @@ console.log(firstName.toUpperCase()); //JAMES
 console.log(firstName.substr(1, 3)); //ame
 console.log(firstName.substr(5, 1)); //returns an empty string
 console.log(firstName.substr(-1, 1)); //s
+
+//split()
+console.log(fullName.split("")); //['J', 'a', 'm', 'e', 's', ' ', 'R', 'o', 'w', 'a']
+console.log(fullName.split("", 5)); //['J', 'a', 'm', 'e', 's']
+console.log(fullName.split(" ")); //['James', 'Rowa']
+console.log(fullName.split("", 0)); //[]
+console.log(
+  "I, James Rowa, do swear that, I understand string methods, JavaScript".split(
+    ","
+  ) //['I', ' James Rowa', ' do swear that', ' I understand string methods', ' JavaScript']
+);
