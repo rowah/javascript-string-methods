@@ -70,3 +70,11 @@ console.log(
     ","
   ) //['I', ' James Rowa', ' do swear that', ' I understand string methods', ' JavaScript']
 );
+
+//slice()
+console.log(fullName.slice(5)); //Rowa
+console.log(fullName.slice(0, 5)); //James
+console.log(fullName.slice(-5)); //Rowa
+console.log(fullName.slice(3, -3)); //es R
+console.log(fullName.slice(0)); //James Rowa
+console.log(fullName.slice()); //returns empty string
