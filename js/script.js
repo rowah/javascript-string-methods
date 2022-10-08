@@ -54,3 +54,8 @@ console.log(fullName.toLowerCase()); //james rowa
 
 //toUpperCase()
 console.log(firstName.toUpperCase()); //JAMES
+
+//substr()
+console.log(firstName.substr(1, 3)); //ame
+console.log(firstName.substr(5, 1)); //returns an empty string
+console.log(firstName.substr(-1, 1)); //s
