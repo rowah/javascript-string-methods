@@ -78,3 +78,10 @@ console.log(fullName.slice(-5)); //Rowa
 console.log(fullName.slice(3, -3)); //es R
 console.log(fullName.slice(0)); //James Rowa
 console.log(fullName.slice()); //returns empty string
+
+//search()
+console.log(fullName.search("Rowa")); //6
+console.log(fullName.search(/[^\w]/g)); //5 the only whitespace in the fullName is at 5
+console.log(fullName.search(/[A-Z]/g)); //0 J at index 0 is the first capital letter
+console.log(fullName.search(/[[.]]/g)); //-1 the fullName has no fullstop
+console.log(fullName.search(/AmEs/i)); //1
